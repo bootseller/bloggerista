@@ -20,5 +20,3 @@ Router.route('/:_id', {
 		return Posts.findOne({_id: this.params._id}); 
 	}
 });
-
-       
