@@ -1,0 +1,68 @@
+/* CSS declarations go here */
+
+/* Main Layout */
+body {
+  padding-top: 50px;
+}
+
+.layout-content {
+	padding-top: 5px;
+}
+
+.float-left {
+	float:left;
+}
+
+.float-right {
+	float:right;
+}
+
+a:visited, a:hover, a:active {
+	text-decoration: none;
+}	
+
+/* General Typography */
+ul li {
+	list-style-type: none;
+}
+
+/* Posts List */
+
+.post-item {
+	padding: 20px 0 25px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.post-meta {
+	display: inline-block;
+	line-height: 1.6;
+}
+
+.post-meta-avatar {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.6;
+}
+
+.post-meta-avatar {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 1.6;
+}
+
+.author-timestamp {
+	display: table-cell;
+	padding-left: 10px;
+}
+
+.link-avatar {
+	display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+}
+
+.post-meta-bottom {
+	line-height: 10px;
+	vertical-align: middle;
+}

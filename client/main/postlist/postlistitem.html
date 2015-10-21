@@ -1,0 +1,31 @@
+<template name="postlistitem">
+	<div class="post-item">
+	    <div class="post-meta">
+	        <div class="post-meta-avatar">
+	            <img alt="Bootstrap Image Preview" src="http://lorempixel.com/36/36/" class="img-circle link-avatar">
+	        </div>
+	        <div class="author-timestamp">
+	            <div class=""><a href="#">{{author}}</a></div>
+	      		<div class="">{{date}}</div> 
+	        </div>
+	    </div>
+	    <div class="post-image">
+	        <img alt="Bootstrap Image Preview" src="http://lorempixel.com/600/180/" class="">
+	    </div>
+	     <h3 class=""><a href="{{pathFor route="post"}}">{{title}}</a></h3>
+
+	    <p class="text-left lead">
+	    	{{excerpt}}
+	    </p>
+	    <div class="post-meta-bottom">
+	        <div class="float-left">
+	        	<a href="{{pathFor route="post"}}">readmore</a>
+	        </div>
+	        <div class="float-right decoration-none">
+				<a class="btn" href="#"><i class="glyphicon glyphicon-heart"></i>{{likes}}</a>
+	          	<a class="btn" href="#"><i class="glyphicon glyphicon-comment"></i>10</a>
+	          	<a class="btn" href="#"><i class="glyphicon glyphicon-bookmark"></i></a>
+	        </div>
+	    </div>
+	</div>
+</template>
