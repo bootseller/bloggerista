@@ -24,3 +24,5 @@ iron:router
 aldeed:collection2
 digilord:faker
 summernote:standalone
+accounts-password
+ian:accounts-ui-bootstrap-3
