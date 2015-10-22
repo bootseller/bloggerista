@@ -2,9 +2,9 @@ Template.newpost.events({
 	"submit .new-post": function(e, tpl) {
 		e.preventDefault();
 		var title = e.target.title.value;
-		var text = e.target.posttext.value;
+		var text = $('.note-editable').html();
 		console.log('clicked');
-		
+
 		var postId = Posts.insert({
 			title: title,
 			date: new Date(),
@@ -16,4 +16,10 @@ Template.newpost.events({
 
 		Router.go('post', {_id: postId});
 	}
-})
+});
+Template.newpost.rendered = function() {
+     $('#summernote').summernote({
+         height: 200,   // set editable area's height
+         focus: true    // set focus editable area after Initialize summernote
+     });
+}
