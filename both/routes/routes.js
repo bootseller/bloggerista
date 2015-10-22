@@ -16,7 +16,7 @@ Router.route('/addpost', {
 Router.route('/:_id', {
   	name: 'post',
   	template: 'post',
-	data: function () { 
-		return Posts.findOne({_id: this.params._id}); 
+	data: function () {
+		return Posts.findOne({_id: this.params._id});
 	}
-});
+}); 
