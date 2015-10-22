@@ -3,12 +3,13 @@ Template.newpost.events({
 		e.preventDefault();
 		var title = e.target.title.value;
 		var text = $('.note-editable').html();
+		var author = Meteor.user().username;
 		console.log('clicked');
 
 		var postId = Posts.insert({
 			title: title,
 			date: new Date(),
-			author: 'New author',
+			author: author,
 			excerpt: 'Lorem Ipsum Dolores New post Item this is I beliewe omg',
 			text: text,
 			likes: '10'
