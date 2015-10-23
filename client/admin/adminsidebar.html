@@ -1,0 +1,8 @@
+<template name="adminsidebar">
+  <div class="bs-example" data-example-id="simple-nav-stacked">
+    <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+      <li role="presentation" class={{#if isActiveRoute 'admin'}}active{{/if}}><a href="/admin">Users</a></li>
+      <li role="presentation" class={{#if isActiveRoute 'adminpostslist'}}active{{/if}}><a href="/admin/posts">Posts</a></li>
+    </ul>
+  </div>
+</template>

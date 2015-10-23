@@ -1,0 +1,22 @@
+<template name="adminusers">
+  <table class="table table-condensed">
+
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Email</th>
+          </tr>
+        </thead><tbody>
+          {{#each userlist}}
+          <tr>
+            <th scope="row">1</th>
+            <td>{{username}}</td>
+            <td>Role</td>
+            <td>email</td>
+          </tr>
+          {{/each}}
+    </tbody>
+  </table>
+</template>

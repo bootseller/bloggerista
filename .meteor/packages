@@ -26,3 +26,6 @@ digilord:faker
 summernote:standalone
 accounts-password
 ian:accounts-ui-bootstrap-3
+zimme:active-route
+service-configuration
+spacebars

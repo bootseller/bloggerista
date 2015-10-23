@@ -1,0 +1,21 @@
+<template name="adminposts">
+  <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Excerpt</th>
+            <th>placeholder</th>
+          </tr>
+        </thead><tbody>
+          {{#each postslist}}
+          <tr>
+            <th scope="row">1</th>
+            <td>{{title}}</td>
+            <td>{{author}}</td>
+            <td>{{excerpt}}</td>
+          </tr>
+          {{/each}}
+    </tbody>
+  </table>
+</template>
