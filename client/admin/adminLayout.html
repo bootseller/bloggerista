@@ -1,4 +1,4 @@
-<template name="mainLayout">
+<template name="adminLayout">
 	<head>
 	  <title>Webcommunity</title>
 	</head>
@@ -9,13 +9,13 @@
 	        <div class="col-md-12">
 	        {{> header}}
 	            <div class="row layout-content">
-	                <div class="col-md-8">
+	                <div class="col-md-3">
 	                    <div class="container-fluid post-list">
-	                    {{> yield}}
+	                	      {{> adminsidebar}}
 	                    </div>
 	                </div>
-	                <div class="col-md-4">
-	                	{{> sidebar}}
+	                <div class="col-md-8">
+                    {{> yield}}
 	                </div>
 	            </div>
 	        </div>

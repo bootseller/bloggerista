@@ -3,6 +3,7 @@
 /* Main Layout */
 body {
   padding-top: 50px;
+  font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
 .layout-content {
@@ -19,9 +20,11 @@ body {
 
 a:visited, a:hover, a:active {
 	text-decoration: none;
-}	
+}
 
 /* General Typography */
+
+
 ul li {
 	list-style-type: none;
 }
