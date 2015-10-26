@@ -22,6 +22,6 @@ if(Meteor.isClient){
       fieldLabel: 'Last name',
       inputType: 'text',
       visible: true
-    }]
+    }],
   });
 }
