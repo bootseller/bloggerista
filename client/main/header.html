@@ -14,7 +14,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              {{#if currentUser}}
+              {{#if isInRole 'superadmin'}}
                 <li><a href="{{pathFor route="admin"}}" class="">Admin</a>
                 </li>
               {{/if}}
