@@ -1,5 +1,4 @@
 Template.registerHelper("toHumanDate", function(timestamp){
-  moment.locale('fr');
   if(timestamp) {
     var length = timestamp.toString().length;
     if ( length === 10 ) {
