@@ -5,7 +5,12 @@ Meteor.publish("allPosts", function() {
 });
 
 Meteor.publish("singlePost", function(postId) {
-  return Posts.find({_id:postId});
+  return [
+    Posts.find({_id:postId}),
+    Meteor.users.find({}, {fields: {
+      "username": 1
+    }})
+  ];
 });
 
 Meteor.publish("postComments", function(postId) {
