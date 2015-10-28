@@ -8,3 +8,11 @@ Template.registerHelper("toHumanDate", function(timestamp){
         }
   }
 });
+
+Template.registerHelper("getUsernameFromId", function(userId){
+  var user = Meteor.users.findOne({_id: userId});
+  if (typeof user === "undefined") {
+    return "Anonymous";
+  }
+  return user.username;
+});
