@@ -28,3 +28,5 @@ ian:accounts-ui-bootstrap-3
 zimme:active-route
 service-configuration
 alanning:roles
+momentjs:moment
+rzymek:moment-locale-uk

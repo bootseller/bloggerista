@@ -1,4 +1,6 @@
 if(Meteor.isClient){
+  /* setting up Uk locale for momentsjs */
+  moment.locale('uk');
   /* setting up accounts UI*/
   accountsUIBootstrap3.setLanguage('ua');
   Accounts.ui.config({
